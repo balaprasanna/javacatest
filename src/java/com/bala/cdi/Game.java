@@ -8,6 +8,7 @@ package com.bala.cdi;
 import java.io.Serializable;
 import java.util.HashMap;
 import javax.enterprise.context.SessionScoped;
+import javax.json.JsonObject;
 
 @SessionScoped
 public class Game implements Serializable{
@@ -63,5 +64,7 @@ private HashMap<String,player> playerList = new HashMap<String,player>();
     public void setHishScore(int HishScore) {
         this.HishScore = HishScore;
     }
-
+    
+    
+    
 }

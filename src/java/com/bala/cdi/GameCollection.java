@@ -5,7 +5,11 @@
  */
 package com.bala.cdi;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import javax.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
@@ -27,5 +31,9 @@ private HashMap<String,Game> listOfGames = new HashMap<String,Game>();
     public  void RemoveGame(String name){
         listOfGames.remove(name);
     }
-    
+ 
+    public boolean hasGame(String name){
+        return (listOfGames.containsKey(name))?true:false;
+    }
+ 
 }
